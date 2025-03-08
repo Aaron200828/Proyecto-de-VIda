@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Vida</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .box {
+            background: skyblue;
+            padding: 15px;
+            border-radius: 105px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        .box h2 {
+            text-align: center;
+        }
+        h1 {
+            background-color: #1b2467;
+            color: White;
+            padding: 2%;
+            border-radius: 20px;
+            transform: translateY(-30px);
+        }
+        .footer {
+        background: #1b2467;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        transform: translateY(20px);
+        right: 15px;
+        }
+        .estrategias-container {
+            position: relative;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #949494;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .estrategia {
+            background: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+        }
+        .estrategias-container::before {
+            content: "";
+            position: absolute;
+            width: 3px;
+            top: 20px;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .btn-regreso {
+            background-color: #1b2467;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn-regreso:hover {
+            background-color: #0c144f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Metas y estrategias</h1>
+    <div class="container">
+        <div class="box">
+            <h2>Metas Académicas</h2>
+            <ul>
+                <li>C.P: Tener un promedio no inferior a 85 puntos en cada área.</li>
+                <li>M.P: Finalizar mi carrera universitaria, siendo esta una Ingeniería en Sistemas.</li>
+                <li>L.P: Tener un dominio del inglés a un alto nivel, este siendo un equivalente a un 80%.</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Metas Económicas</h2>
+            <ul>
+                <li>C.P: Ahorrar para cambiar mi teléfono por otro modelo, un S22 Plus.</li>
+                <li>M.P: Tener estabilidad económica, logrando darme los lujos que quiera de vez en cuando.</li>
+                <li>L.P: Ser una persona con una gran cantidad de dinero para poder adquirir y mantener mis dos motos: la BMW M1000RR y una Yamaha MT-09.</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Metas Emocionales</h2>
+            <ul>
+                <li>C.P: Seguir siendo feliz y llegar al final del tercer bloque estando feliz.</li>
+                <li>M.P: Compartir todas mis emociones con mi familia y ser feliz.</li>
+                <li>L.P: Ser abierto de manera emocional con mi familia y así poder entendernos mutuamente.</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Metas Espirituales</h2>
+            <ul>
+                <li>C.P: Ir a la iglesia de manera más seguida, al menos una vez por semana.</li>
+                <li>M.P: Ser constante yendo a la iglesia en festividades, incluyendo la Navidad.</li>
+                <li>L.P: Dejar de decir malas expresiones y tener paz interior.</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Metas Familiares</h2>
+            <ul>
+                <li>C.P: Tener más momentos inolvidables con los miembros de mi familia.</li>
+                <li>M.P: Ser parte de una relación estable con pensamientos de tener una familia.</li>
+                <li>L.P: Haber formado una familia con mi pareja, tener dos hijos y estar casados.</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Metas Físicas</h2>
+            <ul>
+                <li>C.P: Empezar a alimentarme bien y dejar de lado las bebidas carbonatadas.</li>
+                <li>M.P: Tener un cuerpo normal, con una mejor salud física.</li>
+                <li>L.P: Tener un buen cuerpo, manteniendo una dieta sana y saludable, siendo constante con alguna actividad física.</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Metas Sociales</h2>
+            <ul>
+                <li>C.P: Lograr expandir mi círculo de amistades.</li>
+                <li>M.P: Tener buenas relaciones interpersonales y seguir hablando con mis amistades.</li>
+                <li>L.P: No ponerme nervioso al hablar y poder tener relaciones sanas.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="estrategias-container">
+        <h2>Estrategias</h2>
+        <div class="estrategia">Económico: Aceptar trabajos a los que aplico y no gastar en cosas innecesarias</div>
+        <div class="estrategia">Académicas: Hacer un curso de ingles y practicarlo más en mis actividades diarias</div>
+        <div class="estrategia">Físicas: Comprar en menor cantidad sodas y adquirir más agua pura.</div>
+        <div class="estrategia">Social: Salir a más lugares para conocer a más personas</div>
+        <div class="estrategia">Familiar: Hablar con mi familia de temas de interés común</div>
+        <div class="estrategia">Emocional: Organizar más salidas en familia o con amistades</div>
+        <div class="estrategia">Espiritual: Escuchar el servicio a través de su red social.</div>
+    </div>
+    <div><a href="index.html" class="btn-regreso">Volver a la página principal</a></div>
+    <footer class="footer">
+        <p>Correo: j.aaronchoc@gmail.com | Teléfono: +502 3810-5126</p>
+        <p>&copy; 2025 - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
+
+

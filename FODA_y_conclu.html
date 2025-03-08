@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Vida</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .titulo {
+            background-color: #1b2467;
+            color: white;
+            padding: 2%;
+            padding-right: 40%;
+            padding-left: 49%;
+            border-radius: 10px;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-align: center;
+            transform: translateY(-30px);
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .box {
+            padding: 100px;
+            border-radius: 10px;
+            color: white;
+            position: relative;
+        }
+        .box h2 {
+            margin: 0;
+            text-align: center;
+        }
+        .box ul {
+            margin-top: 10px;
+            padding-left: 20px;
+            color: white;
+            text-align: left;
+            font-size: 20px;
+        }
+        .box::after {
+            content: attr(data-letter);
+            position: absolute;
+            bottom: -15px;
+            right: 15px;
+            font-size: 100px;
+            font-weight: bold;
+            color: white;
+        }
+        .fortalezas { background: #be1b1b; }
+        .oportunidades { background: #2f950a; }
+        .debilidades { background: #1629d3; }
+        .amenazas { background: #e2980e; }
+
+
+        .footer {
+            background: #1b2467;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        transform: translateY(20px);
+        right: 15px;
+        }
+        p {
+            font-size: 20px;
+        }
+        img {
+            width: 500px;
+        }
+        .btn-regreso {
+            background-color: #1b2467;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn-regreso:hover {
+            background-color: #0c144f;
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="titulo">FODA</h1>
+
+<div class="grid-container">
+    <div class="box fortalezas" data-letter="F">
+        <h2>Fortalezas</h2>
+        <ul>
+            <li>Atento</li>
+            <li>Inteligente</li>
+            <li>Amable</li>
+            <li>Entusiasta</li>
+        </ul>
+    </div>
+    <div class="box oportunidades" data-letter="O">
+        <h2>Oportunidades</h2>
+        <ul>
+            <li>Ir a la universidad</li>
+            <li>Trabajar</li>
+            <li>Practicas</li>
+            <li>Programación en empresa</li>
+        </ul>
+    </div>
+    <div class="box debilidades" data-letter="D">
+        <h2>Debilidades</h2>
+        <ul>
+            <li>Físico</li>
+            <li>Cansancio</li>
+            <li>Sobrepensamiento</li>
+            <li>Pereza</li>
+        </ul>
+    </div>
+    <div class="box amenazas" data-letter="A">
+        <h2>Amenazas</h2>
+        <ul>
+            <li>Deudas</li>
+            <li>Robos</li>
+            <li>Enfermedades Terminales</li>
+            <li>Personas con malas intenciones</li>
+        </ul>
+    </div>
+</div>
+<br>
+<br>
+<h1>Conclusión</h1>
+<p>Que, a pesar de todos nuestros errores cometidos, nuestros mayores aliados siempre serán nuestros padres y nunca nos abandonarán, sin importar cuál sea nuestra decisión.</p>
+<img src="https://as2.ftcdn.net/jpg/08/22/77/35/1000_F_822773544_2jNOSkzih5Gy6Ycm6CLLntej5B5K6lng.jpg">
+<br>
+<br>
+<br>
+<div><a href="index.html" class="btn-regreso">Volver a la página principal</a></div>
+<br>
+<br>
+<br>
+    <footer class="footer">
+        <p>Correo: j.aaronchoc@gmail.com | Teléfono: +502 3810-5126</p>
+        <p>&copy; 2025 - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

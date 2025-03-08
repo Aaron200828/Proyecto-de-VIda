@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos para la pantalla de bienvenida */
+        .welcome-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 999;
+        }
+
+        .welcome-screen h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .welcome-screen button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #088831;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .welcome-screen button:hover {
+            background-color: #08732a;
+        }
+
+        /* Estilos para el header */
+        header {
+            position: relative; /* Permite que la imagen se posicione dentro */
+            width: 100%;
+            height: 80px;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        header h1 {
+            color: rgb(0, 0, 0);
+            margin-left: 20px;
+        }
+
+        /* Imagen en la esquina superior derecha */
+        .img-superior-derecha {
+            position: absolute;
+            top: 10px;
+            right: 50px;
+            width: 100px; /* Ajusta el tamaño */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Pantalla de bienvenida -->
+    <div class="welcome-screen">
+        <h1>¡Bienvenido a mi página!</h1>
+        <p>Nombre: Jonnathan Aaron Choc Dieguez</p>
+        <p>Encargado: Ronal Estuardo Soto Solloza</p>
+        <p>Fecha: Marzo, 2025</p>
+        <button onclick="enterWebsite()">Entrar</button>
+    </div>
+
+    <!-- Header con imagen -->
+    <header>
+        <h1>Liceo Compu-Market</h1>
+        <img src="Esto.png" alt="Logo" class="img-superior-derecha">
+    </header>
+
+    <script>
+        function enterWebsite() {
+            window.location.href = "index.html"; // Redirige a la página principal
+        }
+    </script>
+
+</body>
+</html>

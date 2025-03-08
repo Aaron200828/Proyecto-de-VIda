@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Vida</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #1b2467;
+            color: white;
+            padding: 2%;
+            top: auto;
+            border-radius: 10px;
+        }
+
+        /* Contenedor de la línea del tiempo */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            flex: 1; /* Esto asegura que el contenido ocupe el espacio disponible */
+        }
+
+        /* Línea vertical */
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #1b2467;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Caja de cada evento */
+        .event {
+            position: relative;
+            width: 45%;
+            padding: 15px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        /* Alternar eventos a la izquierda y derecha */
+        .event:nth-child(odd) {
+            left: 0;
+        }
+
+        .event:nth-child(even) {
+            left: 55%;
+        }
+
+        /* Círculo indicador */
+        .event::before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: #1b2467;
+            border-radius: 50%;
+            top: 20px;
+            left: 100%;
+            transform: translateX(-50%);
+        }
+
+        .event:nth-child(even)::before {
+            left: 0;
+            transform: translateX(-50%);
+        }
+
+        /* Fecha de cada evento */
+        .event .date {
+            font-weight: bold;
+            color: #0c166a;
+        }
+
+        /* Estilos para el pie de página */
+        .footer {
+        background: #1b2467;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        transform: translateY(20px);
+        right: 15px;
+        }
+
+        /* Estilos del acróstico */
+        .acrostico {
+            color: black;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .acrostico h2 {
+            margin: 10px 0;
+        }
+
+        .acrostico p {
+            margin: 5px 0;
+            font-size: 60px;
+        }
+
+        /* Estilos para el botón de regreso */
+        .btn-regreso {
+            background-color: #1b2467;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn-regreso:hover {
+            background-color: #0c144f;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Biografía</h1>
+    
+    <div class="timeline">
+        <div class="event">
+            <span class="date">2008 - 2010</span>
+            <p>Nací el día 28 de enero del año 2008. Mi madre me comentó que aprendí a caminar antes de cumplir un año. En esta etapa, mi madre me enseñó a ir al baño solo. En 2010, me enteré de la existencia de mi ídolo, una persona a la cual no conozco ni es cercana a mí, pero aunque no lo crean, me motiva a ser mejor persona. Hablo de mi ídolo, Cristiano Ronaldo.</p>
+        </div>
+
+        <div class="event">
+            <span class="date">2014 - 2020</span>
+            <p>En el año 2015 nació mi hermano menor, por quien daría todo y trato de mejorar para ser un ejemplo digno. En los siguientes años, mi amor por los videojuegos se intensificó y mi primer juego que completé fue Mario Galaxy. En esta etapa también tuve a mi único compañero perruno; se llamaba Peluso, un perro de raza Chow Chow. En el año 2018, tuve mi primer teléfono, lo cual considero que empeoró un poco mi vida. Esto lo compensé cuando, en esta etapa, aprendí a armar mi primer cubo de Rubik. Llegando al 2020, el año de la pandemia, empecé a juntarme con dos personas, quienes son uno de los pilares actuales de mi vida. En este año comencé a desvelarme jugando videojuegos.</p>
+        </div>
+
+        <div class="event">
+            <span class="date">2021 - 2023</span>
+            <p>En esta etapa comienza mi meta: ser un futuro pilar para toda mi familia y apoyarlos en todo lo que necesiten. Dejé de meterle dinero como loco al juego en el que me vicié durante la pandemia y, de paso, dejé de jugarlo. Ahora odio Free Fire por haberme robado tiempo y dinero. El 2023 fue uno de los mejores años de mi vida. En este año, el Manchester City ganó el triplete, algo histórico en toda la historia del club. Ganamos la Champions League, lo mejor sin dudas.</p>
+        </div>
+
+        <div class="event">
+            <span class="date">2024 - ???</span>
+            <p>En esta etapa comienza mi formación académica fuera del establecimiento que me vio crecer. Estudio actualmente un Bachillerato en Computación con orientación científica. Este año logré ir a la Caravana del Zorro en mi propia moto, ¡cómo la amo! Y eso es todo por el momento. Espero tener más anécdotas que agregar.</p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Acróstico de la palabra AARON -->
+    <div class="acrostico">
+        <h2>Acróstico: AARON</h2>
+        <br>
+        <br>
+        <p class="p1"><strong>A</strong> - <em>mable</em></p>
+        <br>
+        <p class="p1"><strong>A</strong> - <em>stuto</em></p>
+        <br>
+        <p class="p1"><strong>R</strong> - <em>esponsable</em></p>
+        <br>
+        <p class="p1"><strong>O</strong> - <em>bediente</em></p>
+        <br>
+        <p class="p1"><strong>N</strong> - <em>oble</em></p>
+        <br>
+        <!-- Botón de regreso -->
+        <a href="index.html" class="btn-regreso">Volver a la página principal</a>
+    </div>
+    <br>
+
+    <footer class="footer">
+        <p>Correo: j.aaronchoc@gmail.com | Teléfono: +502 3810-5126</p>
+        <p>&copy; 2025 - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

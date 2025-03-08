@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Vida</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            background-color: #1b2467;
+            color: white;
+            padding: 2%;
+            text-align: center;
+            border-radius: 20px;
+            font-size: 35px;
+            transform: translateY(-20px);
+        }
+
+        section p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Estilos para las imágenes */
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 400px;
+            height: 500px;
+            border-radius: 15px;
+            border: 5px solid #1b2467;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn-regreso {
+            background-color: #1b2467;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn-regreso:hover {
+            background-color: #0c144f;
+        }
+
+        footer {
+            background: #1b2467;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            margin-top: 20px;
+            position: relative;
+            bottom: 0;
+            right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Autoretrato</h1>
+    </header>
+
+    <main>
+        <section class="image-container">
+            <p>Autorretrato original (sin haberlo pasado a digital).</p>
+            <img src="Autoretrato.jpeg" alt="Autorretrato original">
+        </section>
+
+        <section class="image-container">
+            <p>Autorretrato con IA (no se parecen en nada).</p>
+            <img src="IAretrato.jpeg" alt="Autorretrato con IA">
+        </section>
+    </main>
+
+    <br><br>
+    <div><a href="index.html" class="btn-regreso">Volver a la página principal</a></div>
+    <br><br>
+
+    <footer class="footer">
+        <p>Correo: j.aaronchoc@gmail.com | Teléfono: +502 3810-5126</p>
+        <p>&copy; 2025 - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
